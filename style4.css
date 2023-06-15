@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    top: 0;
+    left: 0;
+    background: url(Study_\ Biofuels\ increase\,\ rather\ than\ decrease\,\ heat-trapping\ carbon\ dioxide\ emissions.jpeg)fixed center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 1em;
+    font-weight: bolder;
+}
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    color: navy;
+    margin-left: 20px;
+    font-weight: 10px;
+}
+.navigation a::after{
+    content: ' ';
+    position: absolute;
+    background: navy;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+.navigation button{
+    margin-left: 20px;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid navy;
+    cursor: pointer;
+    outline: none;
+    color: navy;
+    transition: .5s;
+}
+.navigation button:hover{
+    background: navy;
+    color: white;
+}
+.service-expressBox{
+    width: 40%;
+    height: 300px;
+    padding: 20px 112px;
+    background: black;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: .5;
+}
+.service-expressBox h2{
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+.input-area{
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.input-area input{
+    width: 100%;
+    height: 25px;
+    color: white;
+    padding: 0 5px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+} 
+.input-area label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: white;
+    transform: translateY(-150%);
+}
+.show-password--pass-recovery{
+    margin-bottom: 50px;
+}
+.show-password--pass-recovery label{
+    color: white;
+    padding: 30px 0;
+    accent-color: blue;
+}
+.show-password--pass-recovery  p{
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+.show-password--pass-recovery a{
+    color: orange;
+    font-weight: 500;
+    transition: .5s;
+}
+.show-password--pass-recovery a:hover{
+    color: orange;
+}
